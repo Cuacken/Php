@@ -6,9 +6,10 @@ body{
 
 .header{
     display: flex;
-    flex-direction: row;
-    background-color: gainsboro;
-    height: 9%;
+    flex-direction: column;
+    background-color: darkturquoise;
+    margin: 0;
+    padding: 0;
 }
 
 .titulo{
@@ -16,17 +17,19 @@ body{
     color: rgb(68, 66, 66);
 }
 
-.menu{
+.menu ul{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 .menu a{
     text-decoration: none;
-    padding: 10px;
+
     color: rgb(71, 69, 69);
     background-color: inherit;
-    margin: 10px;
+
 }
 
 .menu a:hover{
@@ -34,4 +37,8 @@ body{
     background-color: rgb(75, 90, 85);
     color: white;
     border-radius: 10px;
+}
+
+.menu{
+    display: flex;
 }
