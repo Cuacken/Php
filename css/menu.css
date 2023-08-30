@@ -1,7 +1,8 @@
 body{
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(128,252,212,1) 100%);
 }
 
 .header{
@@ -17,25 +18,49 @@ body{
     color: rgb(68, 66, 66);
 }
 
+.menu{
+    width: 10%;
+    margin: 0;
+    padding: 0;
+    background-color: darkturquoise;
+    height: 595px;
+}
+
 .menu ul{
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
+    align-items: center;
+}
+
+.menu ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
 }
 
 .menu a{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-
+    background-color: darkturquoise;
     color: rgb(71, 69, 69);
     background-color: inherit;
+    margin-bottom: 10px;
+    padding: 5px;
 
 }
+.menu a img{
+    width: 50%;
+}
 
-.menu a:hover{
-    border: 1px solid rgb(56, 55, 55);
-    background-color: rgb(75, 90, 85);
-    color: white;
+.menu ul li:hover{
+    border: 1px solid black;
+    background-color: aquamarine;
+    border-top-right-radius: 10px;
     border-radius: 10px;
 }
 
