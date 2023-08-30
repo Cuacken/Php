@@ -34,7 +34,7 @@
 					<label for="nombre">Nombre:</label>
 					<label for="apellido">Apellido:</label>
 					<label for="edad">Edad:</label>
-					<label for="foto ">Foto de Perfil:</label>
+					<label for="foto">Foto de Perfil:</label>
 				</div>
 				<div class="grupoInputs">
 					<input type="text" name="usuario">

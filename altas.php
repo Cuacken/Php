@@ -15,31 +15,35 @@ $ape = $_POST['apellido'];
 $nom = $_POST['nombre'];
 $ed = $_POST['edad'];
 $foto = $_FILES["foto"]["tmp_name"];
-$tamañofoto = $_FILES ["foto"]["size"];
+$fotoTamanio = $_FILES["foto"]["size"];
 
 // salida de informacion
 
-echo "<h3>".$user."</h3>". "<h3>".$ape."</h3>". "<h3>".$nom."</h3>". "<h3>".$ed."</h3>";
+echo "<h3>".$ape."</h3>". "<h3>".$nom."</h3>". "<h3>".$ed."</h3>";
 
-
-if($foto !="none"){
+if($foto != "none")
+{
 	$fp = fopen($foto,"rb");
-	$contenido = fread($fp, $tamañofoto);
+	$contenido = fread($fp,$fotoTamanio);
 	$contenido = addslashes($contenido);
 	fclose($fp);
 
-$base = "gestion";
+	$base = "gestionsubir";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 
-$cadena= "INSERT INTO persona(usuario, apellido, nombre, edad,foto) VALUES ('$user','$ape','$nom','$ed')";
+$cadena= "INSERT INTO persona(apellido, nombre, edad,foto) VALUES ('$ape','$nom','$ed','$contenido')";
 
 $resultado = mysqli_query($Conexion,$cadena);
 
 if($resultado){
-	echo "se ha insertado un registro"."<br>";
+	print "se ha insertado un registro"."<br>";
 
 }else{
-	echo "NO se ha generado un registro"."<br>";
+	print "NO se ha generado un registro"."<br>";
 }
+
 }
+else
+print "No se puede subir el archivo";
+
  ?>
