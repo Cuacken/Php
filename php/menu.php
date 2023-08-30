@@ -6,6 +6,12 @@
 	<title>Menu general</title>
 	<link rel="stylesheet" href="../css/menu.css">
 </head>
+
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Last-Modified" content="0">
+<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+<meta http-equiv="Pragma" content="no-cache">
+
 <body>
 	<div class="header">
 	<h3 class="titulo">Menu General</h3>

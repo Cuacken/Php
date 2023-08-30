@@ -45,11 +45,14 @@ body{
 }
 
 .grupoInputs{
+
     width: 70%;
     margin: 10px;
 }
 
 .grupoInputs input{
+    border: 1px solid black;
+    border-radius: 50px;
     width: 70%;
     height: 25px;
     margin-bottom: 10px;

@@ -4,7 +4,10 @@
 	<link rel="stylesheet" href="css/altaBajaModificacion.css">
 	</head>
 </html>
-
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Last-Modified" content="0">
+<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+<meta http-equiv="Pragma" content="no-cache">
 
 <?php 
 
@@ -31,7 +34,7 @@ if($foto != "none")
 	$base = "gestion";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 
-$cadena= "INSERT INTO persona(apellido, nombre, edad,foto) VALUES ('$ape','$nom','$ed','$contenido')";
+$cadena= "INSERT INTO persona(usuario, apellido, nombre, edad,foto) VALUES ('$user','$ape','$nom','$ed','$contenido')";
 
 $resultado = mysqli_query($Conexion,$cadena);
 
