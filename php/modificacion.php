@@ -17,8 +17,7 @@ $ed = $_POST['edad'];
 $foto = $_FILES["foto"]["tmp_name"];
 $fotoTamanio = $_FILES["foto"]["size"];
 
-if($foto != "none")
-{
+if($foto != "none"){
 	$fp = fopen($foto,"rb");
 	$contenido = fread($fp,$fotoTamanio);
 	$contenido = addslashes($contenido);
