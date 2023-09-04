@@ -2,17 +2,30 @@
 <meta http-equiv="Last-Modified" content="0">
 <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
 <meta http-equiv="Pragma" content="no-cache">
-<?php
-include 'menu.php';
-?>
+
 <html lang="es">
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Formulario de Altas</title>
-	<link rel="stylesheet" href="css/respuestas.css">
+	<link rel="stylesheet" href="../css/menu.css">
+	<link rel="stylesheet" href="../css/formAltas.css">
 	</head>
 	<body>
+
+	<div class="header">
+		<h3 class="titulo">Menu General</h3>
+	</div>
+	<div class="container">
+		<nav class="menu">
+			<ul>
+				<li><a href="form-altas.php"><img src="../img/subida.png" alt="Altas"></a></li>
+				<li><a href="form-bajas.php"><img src="../img/bajada.png" alt="Bajas"></a></li>
+				<li><a href="form-modificacion.php"><img src="../img/editar.png" alt="Modificaciones"></a></li>
+				<li><a href="listar.php"><img src="../img/lista.png" alt="Listado"></a></li>
+			</ul>
+		</nav>
+
 	<h3 class="tablatitulo">LISTADO DE LOS REGISTRO DE LA TABLA</h3>
 
 	<table class="tabla">
