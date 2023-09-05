@@ -3,6 +3,7 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
+    font: 100;
 }
 
 .header{
@@ -58,7 +59,7 @@ body{
 }
 
 .grupoInputs input{
-    border: 1px solid black;
+    border: 1px solid rgb(194, 27, 27);
     border-radius: 50px;
     width: 70%;
     height: 25px;

@@ -29,7 +29,7 @@
 		</nav>
 		<div class="form">
 		<div>
-		<h3 class="altaTitulo">FORMULARIO DE ALTA</h3>
+		<h3 class="altaTitulo">FORMULARIO DE ALTAS</h3>
 		</div>
 			<form class="altaInput" action="altas.php" method="POST" enctype="multipart/form-data">
 
