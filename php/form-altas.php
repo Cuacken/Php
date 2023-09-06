@@ -29,7 +29,7 @@
 		</nav>
 		<div class="form">
 		<div>
-		<h3 class="altaTitulo">FORMULARIO DE ALTA</h3>
+		<h3 class="altaTitulo">FORMULARIO DE ALTAS</h3>
 		</div>
 			<form class="altaInput" action="altas.php" method="POST" enctype="multipart/form-data">
 
@@ -41,12 +41,12 @@
 					<label for="foto">Foto de Perfil:</label>
 				</div>
 				<div class="grupoInputs">
-					<input type="text" name="usuario">
-					<input type="text" name="nombre">
-					<input type="text" name="apellido">
-					<input type="number" name="edad">
-					<input type="file" name="foto">
-					<input type="submit" value="Grabar">
+					<input type="text" name="usuario" required>
+					<input type="text" name="nombre" required>
+					<input type="text" name="apellido" required>
+					<input type="number" name="edad" required>
+					<input type="file" name="foto" required>
+					<input type="submit" value="Grabar" required>
 				</div>
 
 			</form>

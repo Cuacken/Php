@@ -10,14 +10,14 @@
 
 include 'menu.php';
 
-
+$user = $_POST['usuario'];
 $ape = $_POST['apellido'];
 $nom = $_POST['nombre'];
 $ed = $_POST['edad'];
-$foto = $_FILES["foto"]["tmp_name"];
-$fotoTamanio = $_FILES["foto"]["size"];
+$foto = $_FILES['foto']['tmp_name'];
+$fotoTamanio = $_FILES['foto']['size'];
 
-if($foto != "none"){
+if($fotoTamanio != 0){
 	$fp = fopen($foto,"rb");
 	$contenido = fread($fp,$fotoTamanio);
 	$contenido = addslashes($contenido);
@@ -32,7 +32,7 @@ if($Conexion){
 	echo "la conexion ha fallado "."<br>";
 }
 
-$cadena = "UPDATE  persona SET nombre = '$nom', edad = '$ed', foto = '$contenido' WHERE apellido = '$ape'";
+$cadena = "UPDATE  persona SET apellido = '$ape', nombre = '$nom', edad = '$ed', foto = '$contenido' WHERE usuario = '$user'";
 
 $resultado = mysqli_query($Conexion,$cadena);
 

@@ -9,7 +9,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Formulario de Modificacion</title>
-	<link rel="stylesheet" href="css/formAltas.css">
+	<link rel="stylesheet" href="../css/menu.css">
+	<link rel="stylesheet" href="../css/formAltas.css">
 </head>
 <body>
 <div class="header">
@@ -24,23 +25,22 @@
 				<li><a href="listar.php"><img src="../img/lista.png" alt="Listado"></a></li>
 			</ul>
 		</nav>
-<div class="container">
-	<h3 class="altaTitulo">FORMULARIO DE MODIFICACION</h3>
-	<form class="altaInput" action="modificacion.php" method="POST" >
-	<div class="grupoInputs">
-		<label for="usuario">Campo Clave Nombre de Usuario:</label>
-		<input type="text" name="usuario"><br>	
-    </div>
+		<div class="form">
+		<div>
+		<h3 class="altaTitulo">FORMULARIO DE MODIFICACION</h3>
+		</div>
+	<form class="altaInput" action="modificacion.php" method="POST" enctype="multipart/form-data">
 
-		<br><br>
-		Campos a modificar:<br>
 		<div class="grupoTexto">
+				<label for="usuario">Usuario a modificar:</label>
+				<label for="#">Campos a modificar:</label>
 					<label for="nombre">Nombre:</label>
 					<label for="apellido">Apellido:</label>
 					<label for="edad">Edad:</label>
 					<label for="foto">Foto de Perfil:</label>
 				</div>
 				<div class="grupoInputs">
+					<input type="text" name="usuario"><br>	
 					<input type="text" name="nombre">
 					<input type="text" name="apellido">
 					<input type="number" name="edad">
@@ -48,7 +48,6 @@
 					<input type="submit" value="Grabar">
 				</div>
 	</form>
-</div>
 	
 </body>
 </html>

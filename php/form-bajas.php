@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Formulario de Bajas</title>
-	<link rel="stylesheet" href="css/menu.css">	
-	<link rel="stylesheet" href="css/formAltas.css">
+	<link rel="stylesheet" href="../css/menu.css">
+	<link rel="stylesheet" href="../css/formAltas.css">
 </head>
 <body>
 	
@@ -21,19 +21,19 @@
 				<li><a href="listar.php"><img src="../img/lista.png" alt="Listado"></a></li>
 			</ul>
 		</nav>
-<div class="container">
-	<h3 class="altaTitulo" style="text-align: center;">FORMULARIO DE BAJA</h3>
+	<div class="form">
+		<div>
+			<h3 class="altaTitulo">FORMULARIO DE BAJA</h3>
+		</div>
 	<form class="altaInput" action="bajas.php" method="POST" >
-	    <div class="grupoInputs">
-		<label for="usuario">Nombre de Usuario:</label>
-        <input type="text" name="usuario"><br>	
-        </div>
-		
-		<div class="btn-submit">
-		<input type="submit" value="Eliminar"><br>
-        </div>
+		<div class="grupoTexto">
+			<label for="usuario">Nombre de Usuario:</label>
+		</div>
+		<div class="grupoInputs">
+			<input type="text" name="usuario">
+			<input type="submit" value="Grabar">
+		</div>
 	</form>
-</div>
 	
 </body>
 </html>

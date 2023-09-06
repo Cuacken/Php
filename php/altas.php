@@ -23,8 +23,8 @@ $fotoTamanio = $_FILES["foto"]["size"];
 // salida de informacion
 
 echo "<h3>".$ape."</h3>". "<h3>".$nom."</h3>". "<h3>".$ed."</h3>";
-
-if($foto != "none")
+var_dump($foto);
+if($fotoTamanio != 0)
 {
 	$fp = fopen($foto,"rb");
 	$contenido = fread($fp,$fotoTamanio);
@@ -50,3 +50,17 @@ else
 print "No se puede subir el archivo";
 
  ?>
+ <body>
+ <div class="header">
+		<h3 class="titulo">Menu General</h3>
+	</div>
+	<div class="container">
+		<nav class="menu">
+			<ul>
+				<li><a href="form-altas.php"><img src="../img/subida.png" alt="Altas"></a></li>
+				<li><a href="form-bajas.php"><img src="../img/bajada.png" alt="Bajas"></a></li>
+				<li><a href="form-modificacion.php"><img src="../img/editar.png" alt="Modificaciones"></a></li>
+				<li><a href="listar.php"><img src="../img/lista.png" alt="Listado"></a></li>
+			</ul>
+		</nav>
+ </body>

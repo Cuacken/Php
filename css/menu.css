@@ -8,7 +8,7 @@ body{
 .header{
     display: flex;
     flex-direction: column;
-    background-color: darkturquoise;
+    background-color: rgb(51, 72, 72);
     margin: 0;
     padding: 0;
 }
@@ -23,7 +23,6 @@ body{
     margin: 0;
     padding: 0;
     background-color: darkturquoise;
-    height: 595px;
 }
 
 .menu ul{
