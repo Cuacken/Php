@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Formulario de Altas</title>
+	<title>Formulario</title>
 	<link rel="stylesheet" href="../css/menu.css">
 	<link rel="stylesheet" href="../css/formAltas.css">
 	<meta http-equiv="Expires" content="0">
