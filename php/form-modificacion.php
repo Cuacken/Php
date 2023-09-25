@@ -30,23 +30,29 @@
 		<h3 class="altaTitulo">FORMULARIO DE MODIFICACION</h3>
 		</div>
 	<form class="altaInput" action="modificacion.php" method="POST" enctype="multipart/form-data">
-
+<div class="grupoInputs">
 		<div class="grupoTexto">
 				<label for="usuario">Usuario a modificar:</label>
-				<label for="#">Campos a modificar:</label>
+				<input type="text" name="usuario"><br>
+		</div>
+		<h3 for="#">Campos a modificar:</h3><br>
+		<div class="grupoTexto">
+				
 					<label for="nombre">Nombre:</label>
-					<label for="apellido">Apellido:</label>
-					<label for="edad">Edad:</label>
-					<label for="foto">Foto de Perfil:</label>
-				</div>
-				<div class="grupoInputs">
-					<input type="text" name="usuario"><br>	
 					<input type="text" name="nombre">
+		</div>
+		<div class="grupoTexto">
+					<label for="apellido">Apellido:</label>
 					<input type="text" name="apellido">
+		</div>
+		<div class="grupoTexto">
+					<label for="edad">Edad:</label>
 					<input type="number" name="edad">
-					<input type="file" name="foto">
+		</div>
+					<label for="foto">Foto de Perfil:</label>
 					<input type="submit" value="Grabar">
-				</div>
+				
+					</div>
 	</form>
 	
 </body>

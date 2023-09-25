@@ -26,11 +26,12 @@
 			<h3 class="altaTitulo">FORMULARIO DE BAJA</h3>
 		</div>
 	<form class="altaInput" action="bajas.php" method="POST" >
-		<div class="grupoTexto">
-			<label for="usuario">Nombre de Usuario:</label>
+		<div class="grupoTexto1">
+			<label for="usuario">Nombre de Usuario:</label> 
+			<input class="grupoTexto1"  type="text" name="usuario">
 		</div>
+		<br><br><br>
 		<div class="grupoInputs">
-			<input type="text" name="usuario">
 			<input type="submit" value="Grabar">
 		</div>
 	</form>
