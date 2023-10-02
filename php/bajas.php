@@ -22,7 +22,7 @@ if($Conexion){
 	echo "la conexion ha fallado "."<br>";
 }
 
-$cadena= "DELETE FROM persona  WHERE apellido = '$user'";  
+$cadena= "DELETE FROM persona  WHERE usuario = '$user'";  
 
 $resultado = mysqli_query($Conexion,$cadena);
 

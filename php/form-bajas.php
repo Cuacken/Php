@@ -27,12 +27,14 @@
 		</div>
 	<form class="altaInput" action="bajas.php" method="POST" >
 		<div class="grupoTexto1">
-			<label for="usuario">Nombre de Usuario:</label> 
+			<label for="usuario">Nombre de Usuario:</label>
 			<input class="grupoTexto1"  type="text" name="usuario">
+			
 		</div>
 		<br><br><br>
 		<div class="grupoInputs">
 			<input type="submit" value="Grabar">
+			
 		</div>
 	</form>
 	

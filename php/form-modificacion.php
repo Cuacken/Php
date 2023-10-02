@@ -50,8 +50,9 @@
 					<input type="number" name="edad">
 		</div>
 					<label for="foto">Foto de Perfil:</label>
+					
+					<input type="file" name="foto">
 					<input type="submit" value="Grabar">
-				
 					</div>
 	</form>
 	

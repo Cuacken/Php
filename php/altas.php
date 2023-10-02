@@ -11,7 +11,7 @@
 
 <?php 
 
-include 'menu.php';
+
 
 $user = $_POST['usuario'];
 $ape = $_POST['apellido'];
