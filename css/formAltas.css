@@ -19,10 +19,32 @@ body{
 
 .labelInput label{
 width: 200px;
+margin: 1px;
 }
 
-.inputfile{
-   
+.labelInput input{
+    border-style: solid;
+    margin: 1px;
+}
+
+.labelInput input:focus{
+    outline: none;
+
+}
+
+#miBoton{
+    background-color: #efefef;
+    border-width: 1px;
+    width: fit-content;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: #747474;
+    font-size: small;
+}
+
+#miBoton:hover{
+    background-color: #e4e4e4;
+    border-color: #4c4c4c;
 }
 
 .container{
