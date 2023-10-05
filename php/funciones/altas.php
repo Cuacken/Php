@@ -22,7 +22,6 @@ $fotoTamanio = $_FILES["foto"]["size"];
 
 // salida de informacion
 
-var_dump($foto);
 if($fotoTamanio != 0)
 {
 	$fp = fopen($foto,"rb");
@@ -38,43 +37,61 @@ $cadena= "INSERT INTO persona(usuario, apellido, nombre, edad,foto) VALUES ('$us
 $resultado = mysqli_query($Conexion,$cadena);
 
 if($resultado){
-	print "Se ha insertado el registro"."<br>";
-	print "<a class='btn' href='../formularios/form-altas.php'>Volver</a>
+	print "<div>Se ha insertado el registro correctamente</div>"."<p>";
+	print "<a class='btn' href='../formularios/form-altas.php'>ㅤVolverㅤ</a>
 	<style>
 		body{
+			font-family: sans-serif;
 			display: flex;
-			justify-content: center;
 			margin: 0;
     		padding: 0;
     		background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(128,252,212,1) 100%);
 			margin: 220px;
 			font-size: 30px;
+			color: black;
+			flex-direction: column;
+			justify-content: center;
+			align-content: space-around;
+			align-items: center;
 		}
 		.btn{
-			color: rgb(214, 135, 214);
-    		background-color: black;
-			height: 30px;
+			text-decoration: none;
+			border-radius: 50px;
+			border-width: 3px;
+			border-style: solid;
+			border-color: #767676;
+			background-color: white;
+			width: fit-content;
 		}
 	</style>";
 
 }else{
-	print "No se ha podido generar el registro"."<br>";
-	print "<a class='btn' href='../formularios/form-altas.php'>Volver</a>
+	print "<div>No se ha podido generar el registro</div>"."<p>";
+	print "<a class='btn' href='../formularios/form-altas.php'>ㅤVolverㅤ</a>
 	<style>
-		body{
-			display: flex;
-			justify-content: center;
-			margin: 0;
-    		padding: 0;
-    		background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(128,252,212,1) 100%);
-			margin: 220px;
-			font-size: 30px;
-		}
-		.btn{
-			color: rgb(214, 135, 214);
-    		background-color: black;
-			height: 30px;
-		}
+	body{
+		font-family: sans-serif;
+		display: flex;
+		margin: 0;
+		padding: 0;
+		background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(128,252,212,1) 100%);
+		margin: 220px;
+		font-size: 30px;
+		color: black;
+		flex-direction: column;
+		justify-content: center;
+		align-content: space-around;
+		align-items: center;
+	}
+	.btn{
+		text-decoration: none;
+		border-radius: 50px;
+		border-width: 3px;
+		border-style: solid;
+		border-color: #767676;
+		background-color: white;
+		width: fit-content;
+	}
 	</style>";
 
 }

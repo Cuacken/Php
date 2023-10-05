@@ -24,10 +24,10 @@ if($fotoTamanio != 0){
 $base = "gestion";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 if($Conexion){
-	echo "la conexion fue exitosa "."<br>";
+	echo "La conexion fue exitosa! "."<br>";
 
 }else{
-	echo "la conexion ha fallado "."<br>";
+	echo "La conexion ha fallado "."<br>";
 }
 
 $cadena = "UPDATE  persona SET apellido = '$ape', nombre = '$nom', edad = '$ed', foto = '$contenido' WHERE usuario = '$user'";
@@ -35,43 +35,61 @@ $cadena = "UPDATE  persona SET apellido = '$ape', nombre = '$nom', edad = '$ed',
 $resultado = mysqli_query($Conexion,$cadena);
 
 if($resultado){
-	echo "Se ha modificado el registro"."<br>";
-	echo "<a class='btn' href='../formularios/form-modificacion.php'>Volver</a>
+	echo "<div>Se ha modificado el registro</div>"."<p>";
+	echo "<a class='btn' href='../formularios/form-modificacion.php'>ㅤVolverㅤ</a>
 	<style>
-		body{
-			display: flex;
-			justify-content: center;
-			margin: 0;
-    		padding: 0;
-    		background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(128,252,212,1) 100%);
-			margin: 220px;
-			font-size: 30px;
-		}
-		.btn{
-			color: rgb(214, 135, 214);
-    		background-color: black;
-			height: 30px;
-		}
+	body{
+		font-family: sans-serif;
+		display: flex;
+		margin: 0;
+		padding: 0;
+		background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(128,252,212,1) 100%);
+		margin: 220px;
+		font-size: 30px;
+		color: black;
+		flex-direction: column;
+		justify-content: center;
+		align-content: space-around;
+		align-items: center;
+	}
+	.btn{
+		text-decoration: none;
+		border-radius: 50px;
+		border-width: 3px;
+		border-style: solid;
+		border-color: #767676;
+		background-color: white;
+		width: fit-content;
+	}
 	</style>";
 }
 else{
-	echo "No se ha podido modificar el registro"."<br>";
-	echo "<a class='btn' href='../formularios/form-modificacion.php'>Volver</a>
+	echo "<div>No se ha podido modificar el registro</div>"."<p>";
+	echo "<a class='btn' href='../formularios/form-modificacion.php'>ㅤVolverㅤ</a>
 	<style>
-		body{
-			display: flex;
-			justify-content: center;
-			margin: 0;
-    		padding: 0;
-    		background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(128,252,212,1) 100%);
-			margin: 220px;
-			font-size: 30px;
-		}
-		.btn{
-			color: rgb(214, 135, 214);
-    		background-color: black;
-			height: 30px;
-		}
+	body{
+		font-family: sans-serif;
+		display: flex;
+		margin: 0;
+		padding: 0;
+		background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(128,252,212,1) 100%);
+		margin: 220px;
+		font-size: 30px;
+		color: black;
+		flex-direction: column;
+		justify-content: center;
+		align-content: space-around;
+		align-items: center;
+	}
+	.btn{
+		text-decoration: none;
+		border-radius: 50px;
+		border-width: 3px;
+		border-style: solid;
+		border-color: #767676;
+		background-color: white;
+		width: fit-content;
+	}
 	</style>";
 	echo mysqli_error($Conexion);
 }
